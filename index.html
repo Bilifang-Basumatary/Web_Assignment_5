@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Vlog Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- ==================== HEADER ==================== -->
+    <header>
+        <div class="header-container">
+            <a href="#" class="logo">
+                <div class="logo-icon">W</div>
+                <span class="logo-text">MY BLOG</span>
+            </a>
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#blog">Blog</a></li>
+                    <li><a href="#categories">Categories</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+            <button class="mobile-menu-btn">☰</button>
+        </div>
+    </header>
+
+    <!-- ==================== HERO SECTION ==================== -->
+    <section class="hero-section" id="home">
+        <div class="hero-container">
+            <h1 class="hero-heading">
+                <span class="primary-text">WELCOME TO MY BLOG</span>
+                <span class="secondary-text">Amazing</span>
+            </h1>
+            <p class="hero-subtitle">
+                Transform your ideas into reality with our innovativE solutions. 
+                Experience the perfect blend of creativity and technology.
+            </p>
+            <button class="cta-button" onclick="createRipple(event)">
+                Get Started Now
+            </button>
+        </div>
+    </section>
+
+    <!-- ==================== BLOG SECTION ==================== -->
+    <section class="blog-section" id="blog">
+        <div class="container">
+            <h2 class="section-title">Latest Blog Posts</h2>
+            <p class="section-subtitle">
+                Discover insights, tips, and stories from our team of experts.
+            </p>
+            
+            <div class="blog-grid">
+                <article class="blog-card">
+                    <div class="blog-image-container">
+                        <img src="image1.jpg" alt="Web Development" class="blog-image">
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span class="blog-date">📅 sep 9, 2025</span>
+                            <span class="blog-author">✍️ Shawshank Debnath</span>
+                        </div>
+                        <h3 class="blog-title">The Future of Web Development</h3>
+                        <p class="blog-excerpt">
+                            The future of web Development depends on Artificial Intelligence
+                        </p>
+                    </div>
+                </article>
+
+                <article class="blog-card">
+                    <div class="blog-image-container">
+                        <img src="image2.jpg" alt="Digital Marketing" class="blog-image">
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span class="blog-date">📅 sep 9, 2025</span>
+                            <span class="blog-author">✍️ Bilifang Basumatary</span>
+                        </div>
+                        <h3 class="blog-title">Communication </h3>
+                        <p class="blog-excerpt">
+                            Communication is the most important skill which everyone should know!
+                        </p>
+                    </div>
+                </article>
+
+                <article class="blog-card">
+                    <div class="blog-image-container">
+                        <img src="image3.jpg" alt="UI/UX Design" class="blog-image">
+                    </div>
+                    <div class="blog-content">
+                        <div class="blog-meta">
+                            <span class="blog-date">📅 sep 9, 2025</span>
+                            <span class="blog-author">✍️ Manish Kumar</span>
+                        </div>
+                        <h3 class="blog-title">Making CPP Easy</h3>
+                        <p class="blog-excerpt">
+                            Make CPP very easy and interesting 
+                        </p>
+                    </div>
+                </article>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== CATEGORIES SECTION ==================== -->
+    <section class="categories-section" id="categories">
+        <div class="container">
+            <h2 class="section-title">Explore Categories</h2>
+            <p class="section-subtitle">
+                Discover content across various topics and find what interests you most
+            </p>
+            
+            <div class="categories-grid">
+                <a href="#" class="category-item">
+                    <div class="category-button"><i class="fas fa-code"></i></div>
+                    <span class="category-name">Technology</span>
+                </a>
+                <a href="#" class="category-item">
+                    <div class="category-button"><i class="fas fa-palette"></i></div>
+                    <span class="category-name">Web Designing</span>
+                </a>
+                <a href="#" class="category-item">
+                    <div class="category-button"><i class="fas fa-chart-line"></i></div>
+                    <span class="category-name">Programming Language</span>
+                </a>
+                <a href="#" class="category-item">
+                    <div class="category-button"><i class="fas fa-graduation-cap"></i></div>
+                    <span class="category-name">Education</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== SUBSCRIBE SECTION ==================== -->
+    <section class="subscribe-section">
+        <div class="container">
+            <div class="subscribe-container">
+                <h2 class="section-title">Stay Updated</h2>
+                <p class="section-subtitle">
+                    Subscribe to our amazing page layout which will give amazing user Experience
+                
+                <form class="subscribe-form" onsubmit="handleSubscribe(event)">
+                    <input type="text" class="form-input" placeholder="Your Name" required>
+                    <input type="email" class="form-input" placeholder="Your Email Address" required>
+                    <button type="submit" class="subscribe-button">Subscribe Now</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- ==================== FOOTER ==================== -->
+    <footer class="footer" id="contact">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>About Us</h3>
+                    <p>We make amazing vlogs about new AI tools </p>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <p>🏠 Home | 📝 Blog | 📂 Categories | ℹ️ About | 📞 Contact</p>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact Info</h3>
+                    <p>📧 basumtary@nitw.com<br>📱 91+8474001232<br>📍 Telangana Hanamconda, City Hyderabad</p>
+                </div>
+            </div>
+            
+            <div class="social-icons">
+                <a href="#" class="social-icon facebook"><i class="fab fa-facebook-f"></i></a>
+                <a href="#" class="social-icon twitter"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="social-icon instagram"><i class="fab fa-instagram"></i></a>
+                <a href="#" class="social-icon linkedin"><i class="fab fa-linkedin-in"></i></a>
+                <a href="#" class="social-icon youtube"><i class="fab fa-youtube"></i></a>
+</body>
